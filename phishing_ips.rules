@@ -1,0 +1,2 @@
+ipvar PHISHING_IPS [203.0.113.5,198.51.100.23,10.10.10.10,11.11.11.1,12.12.12.12,13.13.13.13]
+alert ip $PHISHING_IPS any -> any any (msg:"Phishing Attempt Detected from Known Phishing IP"; sid:1000005; rev:1;)

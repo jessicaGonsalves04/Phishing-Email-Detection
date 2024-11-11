@@ -1,0 +1,1 @@
+alert tcp any any -> any 25 (msg:"Suspicious Filename Detected in Email Attachment"; flow:to_server,established; content:"Content-Disposition: attachment"; nocase; content:"filename="; nocase; pcre:"/filename=.*[\%|\$|\&|\^|\@|\.exe|\.bat|\.sh|\.js|\.vbs|\.com|\.cmd|\.zip|\.rar|\.7z|\.tar|\.gz]/i"; sid:10050; rev:1;)

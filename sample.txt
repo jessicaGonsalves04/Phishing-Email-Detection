@@ -1,0 +1,91 @@
+Delivered-To: shragviraviraj@gmail.com
+Received: by 2002:a05:6200:81b:b0:572:45eb:400d with SMTP id s27csp5026766qnz;
+        Thu, 7 Nov 2024 13:11:54 -0800 (PST)
+X-Received: by 2002:a05:620a:1908:b0:7ac:a93b:4d3a with SMTP id af79cd13be357-7b332942dccmr39816185a.28.1731013913802;
+        Thu, 07 Nov 2024 13:11:53 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1731013913; cv=none;
+        d=google.com; s=arc-20240605;
+        b=UhKX38AB1c1rmx7QHbnaKjXS8gCEOpPX3Ztst/kPel52ew4r8CV4c4XPQugFB1PZq+
+         Vn++ea1h43FsnPvx3Uyv/811JegcLC5G+E3CpWUL2qv2TrP8qjzyfwCOvTC4b3mrGVV1
+         k4NL2xbNatzvn+fqMWjHq85ONy7Huhk0TTbrS5Wk3kOqZLIenJjamsUAiQ3apc7AR8TF
+         unrzg6zGhCBWVloq79t7TCvZyBOqT0kEg7w/80TrPEJ2z9Ywm4kILKA5OFw/iPwcgH7o
+         VhF1/ZMaYldFbTb8tDWyLxsifSPa/sHMn16s1/8/jfxfuhGRbJ1HyS0ShRrr1cCPT+R4
+         UVOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=yg93EHrqrndacmzqU5IGvYGJPLBHm1/YKWl1VUjvQGU=;
+        fh=CDndYYkPdPvn/fndc6DNMl/qDA8FNO2zW/Q0pSSXGUg=;
+        b=YI3z8Vxwy8gTjEswRTi2mSQ0ec55j0eLbFt2uLwC7M0Fj9xXIasUj8bp4FxMMHCBQU
+         joYgyN/wiGjCMqXsOrINPSDOWMFMnsTCoMZWXKcW0v9GMrXMxLM8geLSrjI1iXtNQLQZ
+         CE717ZHKcBAzSVQR0Z/CbSTh0RNJkR4O+iE3y6o+2a5kfMlJQp1QFDmaLgHExPeYSmWA
+         QwbMZwc00ZjUj038QSC9ozIdPlbzfT/poYVPEOFbuaygAt4arl9zx74a1RR//odlkdTt
+         qvqu1guhhIx9yxgMoCM11Pmp5TGt4wRgsaMQxkEBuP+1y8lWp8IR16Ad9POhyeW0cXma
+         NywA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=GvB1y1HS;
+       spf=pass (google.com: domain of jessicamanipal504@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jessicamanipal504@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <jessicamanipal504@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id af79cd13be357-7b321e62534sor479748285a.6.2024.11.07.13.11.53
+        for <shragviraviraj@gmail.com>
+        (Google Transport Security);
+        Thu, 07 Nov 2024 13:11:53 -0800 (PST)
+Received-SPF: pass (google.com: domain of jessicamanipal504@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=GvB1y1HS;
+       spf=pass (google.com: domain of jessicamanipal504@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jessicamanipal504@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1731013912; x=1731618712; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yg93EHrqrndacmzqU5IGvYGJPLBHm1/YKWl1VUjvQGU=;
+        b=GvB1y1HS68Ed6L+YRzPVjWIm2DVBzS9CItVmASf4miCqnXhvJnO6Dppn3waV9EMA3c
+         D14gSJRLP1auP+wus9IBQ15ay6QGyWtj+kuCoxzV83P1JVdwjydgwy0NUtsYnFxg/yS5
+         i7OpIz+4CZZbl4sWH/9+qYNfCmk0eKrq1QstawQw/Cil70zauMqOb/rScUk4sghoZSy1
+         oKT4x8khfe1vehgFBza4z7Q0uihB7lcXh47I6E1kBNOX8ZYMLc+/xL3ZVL2Py8KuFsQ4
+         vFxKS3D+IbvZP7DR6oeEV92Z5PXnv1/kEOdfO20OJ9ySb/AUvXXyID1We54r5u/zVfqr
+         uZZA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1731013912; x=1731618712;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yg93EHrqrndacmzqU5IGvYGJPLBHm1/YKWl1VUjvQGU=;
+        b=GB1wTHNn0DMnoxscKSauqMP2eQPMagQBAbTSARtt9vGi/JXJvzTh810sUMy4fV3nUB
+         WVy5UcyF7KRP7ZkcvVLra/pOOy2E+xoHB1tVT9uBXSMsQB/Ds6QCc1HoM9vPeuLsYqoV
+         y/V/CL+zxeH0BhwBLalPwK8bQQ7x5LWmu4msbYTdTodxBPzaaxRlBr1TMUjrisvFbogg
+         j69XMCpNE21XopppJ5/gxA1hsyT2047gxJebxgN/XbWvuht0/RrYwAPdwNVx3Yyt8EHU
+         YyiEwPrbV2uRLTzJbqNAyiZeuJMrIabtipsKnTINPXTeEcCbxIFxYBzEyr2yXGViCCoL
+         CohQ==
+X-Gm-Message-State: AOJu0Yz2ix+b1QlF2JYdvahtQ7AxIhEFg3D6L7S0Dsy9KtDSEKcp9wjQ RkRpPjTvWf49QV7SfSCG1uJBV8VynzF845Ztaaw24XOy1R02KsOojsvrFsRSJGFbxaEKHpCbf6D hrO2OQOQQ7QFgJZ6ngMUwAPKG8UY3h0uhxsQ=
+X-Google-Smtp-Source: AGHT+IHZZqTElNZHsrjuh2kA/xp/ei6GNdnAgk7GnE4X8ljpprjSLQLLNMTxjozdnClKme/gePPfXh246SnA+l3RX+k=
+X-Received: by 2002:a05:6214:2f8a:b0:6d3:5bee:33c9 with SMTP id 6a1803df08f44-6d39e564f78mr4392216d6.21.1731013912335; Thu, 07 Nov 2024 13:11:52 -0800 (PST)
+MIME-Version: 1.0
+From: Jessica Gonsalves <jessicamanipal504@gmail.com>
+Date: Thu, 7 Nov 2024 21:11:39 +0530
+Message-ID: <CADX=8C5achoYFbDZ8hHp8UAAfYY=m4tbb31fS7EGDy2kaMx5Og@mail.gmail.com>
+Subject: CLICKKK NOWWW !!!!!!!!!
+To: Shragvi Raviraj <shragviraviraj@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000589cbd0626591554"
+
+--000000000000589cbd0626591554
+Content-Type: text/plain; charset="UTF-8"
+
+AMAZING DEALLS claim your offer right now. Limited Tim only offer.
+CLICK HERE!!!!! <https://ww15.soap2dayhd.co/>
+Regards
+Team Amazona
+
+--000000000000589cbd0626591554
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">AMAZING DEALLS=C2=A0claim your offer right now. Limited Ti=
+m only offer.<div><a href=3D"https://ww15.soap2dayhd.co/">CLICK HERE!!!!!</=
+a><br></div><div>Regards=C2=A0</div><div>Team Amazona</div></div>
+
+--000000000000589cbd0626591554--

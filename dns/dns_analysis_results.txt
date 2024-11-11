@@ -1,0 +1,7 @@
+Analyzing DNS traffic...
+Analyzing DNS traffic for: ww15.soap2dayhd.co
+No DNS activity detected for ww15.soap2dayhd.co.
+------------------------------------
+Analyzing DNS traffic for: ww15.soap2dayhd.co
+No DNS activity detected for ww15.soap2dayhd.co.
+------------------------------------

@@ -1,0 +1,234 @@
+.pop-up-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 10px;
+  padding: 55px 52px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1.0);
+  background: linear-gradient(
+    180deg,
+    rgba(58, 95, 180, 0.77) 0%,
+    rgba(125, 80, 197, 0.77) 29%,
+    rgba(127, 30, 109, 0.76) 92%
+  );
+}
+
+.pop-up-page .frame {
+  display: flex;
+  width: 1700px;
+  height: 1300px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 49px 70px;
+  position: relative;
+  margin-top: -17.00px;
+  margin-bottom: -17.00px;
+  background-color: #0d0714d0;
+  border-radius: 64px;
+}
+
+.pop-up-page .text-wrapper {
+  position: absolute;
+  height: 33px;
+  top: 50px;
+  left: 89px;
+  background: linear-gradient(
+    180deg,
+    rgb(22, 77, 207) 14.6%,
+    rgb(171, 96, 206) 50%,
+    rgb(200, 48, 145) 79.6%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Playpen Sans", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.pop-up-page .rectangle {
+  position: absolute;
+  width: 1500px;
+  height: 800px;
+}
+.frame .rectangle{
+  height: 1200px;
+}
+
+.pop-up-page .div {
+  position: absolute;
+  width: 622px;
+  top: 141px;
+  left: 143px;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.pop-up-page .result {
+  position: absolute;
+  width: 228px;
+  height: 244px;
+  top: 180px;
+  left: 1350px;
+  object-fit: cover;
+}
+
+.pop-up-page .img {
+  position: absolute;
+  width: 242px;
+  height: 65px;
+  top: 487px;
+  left: 1330px;
+}
+
+.pop-up-page .text-wrapper-4 {
+  position: absolute;
+  width: 149px;
+  height: 36px;
+  top: 500px;
+  left: 1370px;
+  transition: all 0.2s ease;
+  font-family: "Sirin Stencil", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* .box {
+  width: 242px;
+  height: 65px;
+}
+
+.box .rectangle {
+  position: fixed;
+  width: 242px;
+  height: 65px;
+  top: 0;
+  left: 0;
+}
+.pop-up-page .text-wrapper2 {
+  position: absolute;
+  width: 242px;
+  height: 65px;
+  top: 307px;
+  left: 419px;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #9af9ff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+} */
+
+/* THIS IS ADJUSTED HEIGHT */
+/* .pop-up-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 55px 52px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1.0);
+  background: linear-gradient(
+    180deg,
+    rgba(58, 95, 180, 0.77) 0%,
+    rgba(125, 80, 197, 0.77) 29%,
+    rgba(127, 30, 109, 0.76) 92%
+  );
+}
+
+.pop-up-page .frame {
+  display: flex;
+  width: 1500px; 
+  height: 1700px; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 49px 70px;
+  position: relative;
+  margin-top: -17.00px;
+  margin-bottom: -17.00px;
+  background-color: #0d0714d0;
+  border-radius: 64px;
+}
+
+.pop-up-page .inner-frame {
+  width: 1800px; 
+  height: 1500px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 32px; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-up-page .text-wrapper {
+  position: absolute;
+  height: 33px;
+  top: 50px;
+  left: 89px;
+  background: linear-gradient(
+    180deg,
+    rgb(22, 77, 207) 14.6%,
+    rgb(171, 96, 206) 50%,
+    rgb(200, 48, 145) 79.6%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Playpen Sans", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.pop-up-page .rectangle {
+  position: relative;
+  width: 974px; 
+  height: 430px; 
+}
+
+.pop-up-page .div {
+  position: absolute;
+  width: 622px; 
+  top: 141px;
+  left: 143px;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.pop-up-page .result {
+  position: absolute;
+  width: 228px;
+  height: 244px; 
+  top: 200px; 
+  left: 797px; 
+  object-fit: cover;
+} */

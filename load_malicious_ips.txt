@@ -1,0 +1,145 @@
+malicious_ips.txt: sudo nano /etc/snort/rules/malicious_ips.txt
+
+203.0.113.5
+198.51.100.23
+
+-----------------------------------------------------------------------------
+
+update_phishing_ips.sh:
+
+#!/bin/bash
+# Script to read malicious IPs from a file and update the Snort rule file
+
+# Define the source file and target Snort rule file
+MALICIOUS_IP_FILE="/etc/snort/rules/malicious_ips.txt"
+RULE_FILE="/etc/snort/rules/phishing_ips.rules"
+
+# Read IPs from file and concatenate into a comma-separated list
+IPS=$(paste -sd "," $MALICIOUS_IP_FILE)
+
+# Backup the existing rule file
+cp $RULE_FILE ${RULE_FILE}.bak
+
+# Update the Snort rule file with the IPs
+echo "ipvar PHISHING_IPS [$IPS]" > $RULE_FILE
+echo 'alert ip $PHISHING_IPS any -> any any (msg:"Phishing Attempt Detected from Known Phishing IP"; sid:1000005; rev:1;)' >> $RULE_FILE
+
+echo "Snort rules updated with IPs: $IPS"
+
+---------------------------------------------------------------------------
+
+
+ $  cd /etc/snort/rules/
+ $  sudo chmod +x update_phishing_ips.sh
+ $ sudo ./update_phishing_ips.sh
+ $  sudo systemctl restart snort
+
+ $sudo chmod 666 /etc/snort/rules/phishing_ips.rules
+ $sudo chmod 666 /etc/snort/rules/phishing_ips.rules.bak
+ sudo chmod 666 /etc/snort/rules/block_list.rules
+
+
+chmod 777 /home/hp/Desktop/project_final_nov_7_2pm/dns/tmp
+
+-----------------------------------------------------------
+
+updated phishing_ips.rule:
+
+ipvar PHISHING_IPS [203.0.113.5,198.51.100.23]
+alert ip $PHISHING_IPS any -> any any (msg:"Phishing Attempt Detected from Known Phishing IP"; sid:1000005; rev:1;)
+
+---------------------------------------------------------------------------------
+
+sudo snort -T -c /etc/snort/snort.conf
+
+-----------------------------------------------------------------------------------------
+
+18  ip link show
+   19  ip addr show
+   20  sudo apt-get install -y build-essential libpcap-dev libpcre3-dev libdumbnet-dev liblzma-dev openssl libssl-dev zlib1g-dev libnghttp2-dev libdnet autoconf automake libtool libmnl-dev pkg-config libdumbnet1-dev
+   21  sudo apt-get install -y build-essential libpcap-dev libpcre3-dev libdumbnet-dev liblzma-dev openssl libssl-dev zlib1g-dev libnghttp2-dev libdnet autoconf automake libtool libmnl-dev pkg-config libdumbnet-dev
+   22  sudo apt-get install -y git
+   23  git clone https://github.com/ofalk/libdnet.git
+   24  cd libdnet
+   25  ./configure
+   26  make
+   27  sudo make install
+   28  sudo ldconfig
+   29  sudo apt-get install -y build-essential libpcap-dev libpcre3-dev libdumbnet-dev liblzma-dev openssl libssl-dev zlib1g-dev libnghttp2-dev autoconf automake libtool libmnl-dev pkg-config
+   30  sudo apt-get install -y snort
+   31  sudo cp /usr/src/snort-*/etc/*.conf* /etc/snort/
+   32  sudo cp /usr/src/snort-*/etc/*.map /etc/snort/
+   33  sudo nano /etc/snort/snort.conf
+   34  sudo mkdir -p /var/log/snort
+   35  sudo mkdir -p /var/log/snort
+   36  sudo chown snort:snort /var/log/snort
+   37  sudo chmod 755 /var/log/snort
+   38  sudo apt-get install snort-rules-default
+   39  cd /etc/snort/rules
+   40  sudo wget https://www.snort.org/downloads/community/community-rules.tar.gz
+   41  sudo tar -xzvf community-rules.tar.gz
+   42  sudo rm community-rules.tar.gz
+   43  sudo snort -T -c /etc/snort/snort.conf
+   44  sudo nano /etc/snort/snort.conf
+   45  snort -V
+   46  sudo nano phishing_ips.rules
+   47  sudo nano malicious_ips.txt
+   48  sudo nano update_phishing_ips.sh
+   49  sudo snort -T -c /etc/snort/snort.conf
+   50  sudo apt-get install hping3
+   51  sudo nano /etc/snort/snort.conf
+   52  sudo snort -T -c /etc/snort/snort.conf
+   53  sudo chmod +x update_phishing_ips.sh
+   54  sudo nano phishing_ips.rules
+   55  sudo snort -T -c /etc/snort/snort.conf
+   56  sudo snort -q -D -i wlp0s20f3 -A json -c /etc/snort/snort.conf -l /var/log/snort
+   57  sudo snort -A console -c /etc/snort/snort.conf -i wlp0s20f3
+   58  pip --version
+   59  python3 --version
+   60  pip3 --version
+   61  sudo apt install -y python3-pip
+   62  pip3 --version
+   63  pip --version
+   64  pip3 install Flask
+   65  sudo apt remove --purge -y python3-pip
+   66  pip --version
+   67  pip3 --v
+   68  pip3 --version
+   69  python3 --version
+   70  pip --version
+   71  sudo apt install -y python3-pip
+   72  pip --version
+   73  python3 app.py
+   74  ls -l ./start_snort.sh ./run_hping3.sh
+   75  chmod +x ./start_snort.sh
+   76  chmod +x ./run_hping3.sh
+   77  pip show flask
+   78  source myproject_env/bin/activate
+   79  pip show flask
+   80  python3 app.py
+   81  cd 1stpage/
+   82  pip show flask
+   83  python3 app.py
+   84  history
+
+--------------------------------------------------------------
+sudo apt install python3-venv
+
+rm -rf my_flask_env
+python3 -m venv my_flask_env
+source my_flask_env/bin/activate
+pip install flask openpyxl flask-cors
+source my_flask_env/bin/activate
+
+python3 app.py
+python3 -m http.server 8000
+index.html
+http://localhost:8000/index.html
+
+----------------------------------------------------------
+
+sudo apt update
+sudo apt install nmap
+nmap -v
+nmap -sL 209.85.220.41
+

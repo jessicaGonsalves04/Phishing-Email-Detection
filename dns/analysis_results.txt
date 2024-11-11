@@ -1,0 +1,8 @@
+
+Performing text analysis on the email body...
+Potentially Malicious. Suspicious word detected: offer
+Potentially Malicious. Suspicious word detected: limited
+Potentially Malicious as excessive exclamation marks detected: 10
+Potentially malicious as spelling mistakes detected.
+------------------------------------
+Analysis complete.

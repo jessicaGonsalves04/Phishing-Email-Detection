@@ -1,0 +1,191 @@
+.laptop {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 55px 52px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(58, 95, 180, 0.77) 0%,
+    rgba(125, 80, 197, 0.77) 29%,
+    rgba(127, 30, 109, 0.76) 92%
+  );
+}
+
+
+
+.laptop .frame {
+  position: relative;
+  width: 1152px;
+  height: 644px;
+  top: 38px;
+  left: 64px;
+  background-color: #0d0714d0;
+  border-radius: 64px;
+}
+
+.laptop .text-wrapper {
+  position: absolute;
+  height: 33px;
+  top: 50px;
+  left: 89px;
+  background: linear-gradient(
+    180deg,
+    rgb(22, 77, 207) 14.6%,
+    rgb(171, 96, 206) 50%,
+    rgb(200, 48, 145) 79.6%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Playpen Sans", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.laptop .div {
+  position: absolute;
+  width: 478px;
+  height: 68px;
+  top: 112px;
+  left: 89px;
+  transform: rotate(0.03deg);
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.laptop .frame {
+  position: relative;
+  width: 1152px;
+  height: 644px;
+  margin-top: -17px;
+  margin-bottom: -17px;
+  background-color: #0d0714d0;
+  border-radius: 64px;
+}
+
+.laptop .text-wrapper-2 {
+  position: absolute;
+  width: 530px;
+  height: 79px;
+  top: 180px;
+  left: 89px;
+  background: linear-gradient(
+    180deg,
+    rgb(6.8, 82.07, 255) 0%,
+    rgb(23.92, 119.5, 197.7) 26.1%,
+    rgb(171, 96, 206) 57.1%,
+    rgb(200, 48, 145) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Playpen Sans", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.laptop .cyber-security {
+  position: absolute;
+  width: 134px;
+  height: 148px;
+  top: 112px;
+  left: 619px;
+  object-fit: cover;
+}
+
+.laptop .text-wrapper-3 {
+  position: absolute;
+  width: 318px;
+  height: 36px;
+  top: 307px;
+  left: 419px;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #9af9ff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.laptop .rectangle {
+  position: absolute;
+  width: 338px;
+  height: 72px;
+  top: 350px;
+  left: 409px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 5px solid;
+  opacity: 0.1;
+}
+
+.laptop .email-header {
+  position: absolute;
+  width: 318px;
+  height: 52px;
+  top: 358px;
+  left: 418px;
+  background-color: transparent;
+  -webkit-text-stroke: 1px #4f4848;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: 0;
+  padding: 0;
+}
+
+.laptop .text-file {
+  position: absolute;
+  width: 65px;
+  height: 52px;
+  top: 360px;
+  left: 752px;
+  transition: all 0.2s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.laptop .img {
+  position: absolute;
+  width: 242px;
+  height: 65px;
+  top: 487px;
+  left: 457px;
+}
+
+.laptop .text-wrapper-4 {
+  position: absolute;
+  width: 149px;
+  height: 36px;
+  top: 500px;
+  left: 504px;
+  transition: all 0.2s ease;
+  font-family: "Sirin Stencil", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}

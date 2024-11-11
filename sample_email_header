@@ -1,0 +1,187 @@
+Delivered-To: medini98765@gmail.com
+Received: by 2002:a05:7108:818f:b0:3af:1c85:d9da with SMTP id c15csp21414gdv;
+        Wed, 16 Oct 2024 22:39:42 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFWSLg2+AafyHzDyx1KZ8+HKtufRnQkhL9I77k9KMUpynngaDncpi6H+H+66TdkYQV3knjv
+X-Received: by 2002:a05:6402:440e:b0:5c9:a5a9:1175 with SMTP id 4fb4d7f45d1cf-5c9a5a9135fmr1417061a12.17.1729143581789;
+        Wed, 16 Oct 2024 22:39:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1729143581; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Z3K7sLjd/kosNy9soPqH4Cs3AZ5urbgKFXNDdrYpnrBoB2M2GbK2Fl/OPuEi3mtiuY
+         1L0xf4GOXZq+ics7E1r5AhJBxuc5igq18XBfLF0OFjHkQZkuYTN8znqGjw180iJOYfZd
+         Qgs6IJiaf/UVKsm143+qkHW18CId5UFj4MDDcYUzjXaC9HjvpGxUEZF39EiJG7F1+yNa
+         nc1Flll/fCA/e/vVV8lob+tDAUdV+O0S0v55+JAmXGU265NPbHYwTGpyZ8cC9ivJsJ5r
+         L+/NXZJyE3DZxiEtSiYYmE1Cz7NyVlh2iIH3bizIlxJ1Q2HB0fVWnmyK5g0Mw2Rzfvu+
+         2sEw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe:content-transfer-encoding:mime-version
+         :subject:message-id:to:from:date:dkim-signature:dkim-signature;
+        bh=YJ+fs/kcafogDBrDk5E+Bp7boCZZNYI7REmO8mLEZqQ=;
+        fh=3ZPTlH6PnIwvKnCH/G82JHcXd9qIUfVyvsvDh62ttUw=;
+        b=ddWiA2f4SufPa7CWPna+xzPGuSmqKA+/mdTy2H7oKfDjvFwt5ahA7lX0Ua/YELdDy2
+         O0F9lAW94MaTSKFi4aE2SKlTFUvA/3NnA7v/YPYer9ECP8WAgP9KqbXMCvzgILNNRP8g
+         d/8xXDppAPZElwJA7PIoLv3FOvGaDGNHWa9NvWmRg5m3pmSzSpOHyT867HGqCbsOz4mU
+         MPISG77yiodnKUHEZXyHi/bZIkMydMW3VogCxmKZyh8mmok73RxWh53XVkVavkfvuA1I
+         Mlvvw1xTYMPJ8OIc4msID/zLBhreITimBYo6I2dqfSYpUyW9toghNEN9HAQlE6eGlBvE
+         s4nA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@jhatkaa.org header.s=z2hmxohkiyf4ucv4av5t6ila5ir6qmgv header.b=h2oRXMVE;
+       dkim=pass header.i=@amazonses.com header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=ZSL89kIq;
+       spf=pass (google.com: domain of 0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com designates 13.13.13.13 as permitted sender) smtp.mailfrom=0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com
+Return-Path: <0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com>
+Received: from a6-17.smtp-out.eu-west-1.amazonses.com (a6-17.smtp-out.eu-west-1.amazonses.com. [13.13.13.13])
+        by mx.google.com with ESMTPS id 4fb4d7f45d1cf-5c98d8220e6si3737855a12.340.2024.10.16.22.39.41
+        for <medini98765@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 16 Oct 2024 22:39:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com designates 13.13.13.13 as permitted sender) client-ip=13.13.13.13;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@jhatkaa.org header.s=z2hmxohkiyf4ucv4av5t6ila5ir6qmgv header.b=h2oRXMVE;
+       dkim=pass header.i=@amazonses.com header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=ZSL89kIq;
+       spf=pass (google.com: domain of 0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com designates 13.13.13.13 as permitted sender) smtp.mailfrom=0102019298fd2a78-d998fed1-0152-4ba5-aad8-54b29c0a794c-000000@eu-west-1.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=z2hmxohkiyf4ucv4av5t6ila5ir6qmgv; d=jhatkaa.org; t=1729143581; h=Date:From:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe; bh=eQo9tWoG2XpR4tT7b30zl6MV0UA+kPSjxpKF1+nZqG0=; b=h2oRXMVERxxffXt6Yt5KtuzS7cv05PDwGEzZIb7MJZyvJOBX6KlQy0NGbBoruPee cedjBJoyaXfGh5fRMXIs1CQJLhLt1qX67vZXozV4yaip7DZWNz/jPe0GBGEfzAtjp/j K486P4xUrA+LNvq289eIS+xOqkcPuhBJ/IilgROw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1729143581; h=Date:From:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe:Feedback-Id; bh=eQo9tWoG2XpR4tT7b30zl6MV0UA+kPSjxpKF1+nZqG0=; b=ZSL89kIqCrHwjObX7kHnd8Rvo4qQZU+mR8BW0KhNTauFT5xrG0joalQTdCCRqPMY wZ/TEwfDDuC1YmIpgaDkhywdSTeQZUSYuhuXx2QbBDcSNVDZc2DgKwyhN3coX/dojez O4OUjajFl5W6wVFrpT4yJ6PzoMBS2x3UkQ/xKLrA=
+	
+	
+MIME-Version: 1.0
+Date: Wed, 18 Sep 2024 06:33:16 +0530
+Message-ID: <CAKysY_OPyCe52Si4d1n2SHWyuqV=gCYODSy2yLHkDWGGNKfkqw@mail.gmail.com>
+Subject: WEBTECH
+From: Shragvi Raviraj <shragviraviraj@gmail.com>
+To: Jessica Gonsalves <jessicamanipal504@gmail.com>, medini98765@gmail.com
+Content-Type: multipart/mixed; boundary="0000000000003c435306225efb55"
+
+--0000000000003c435306225efb55
+Content-Type: multipart/alternative; boundary="0000000000003c435006225efb53"
+
+--0000000000003c435006225efb53
+Content-Type: text/plain; charset="UTF-8"
+
+cant send script.js for calculator
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
+
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+function calculate() {
+    try {
+        const result = eval(document.getElementById('display').value);
+        document.getElementById('display').value = result;
+    } catch (error) {
+        document.getElementById('display').value = 'Error';
+    }
+}
+
+--0000000000003c435006225efb53
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">cant send script.js for calculator=C2=A0<br><div style=3D"=
+color:rgb(204,204,204);background-color:rgb(31,31,31);font-family:Consolas,=
+&quot;Courier New&quot;,monospace;font-size:14px;line-height:19px;white-spa=
+ce:pre"><div><span style=3D"color:rgb(86,156,214)">function</span> <span st=
+yle=3D"color:rgb(220,220,170)">appendToDisplay</span>(<span style=3D"color:=
+rgb(156,220,254)">value</span>) {</div><div>=C2=A0 =C2=A0 <span style=3D"co=
+lor:rgb(156,220,254)">document</span>.<span style=3D"color:rgb(220,220,170)=
+">getElementById</span>(<span style=3D"color:rgb(206,145,120)">&#39;display=
+&#39;</span>).<span style=3D"color:rgb(156,220,254)">value</span> <span sty=
+le=3D"color:rgb(212,212,212)">+=3D</span> <span style=3D"color:rgb(156,220,=
+254)">value</span>;</div><div>}</div><br><div><span style=3D"color:rgb(86,1=
+56,214)">function</span> <span style=3D"color:rgb(220,220,170)">clearDispla=
+y</span>() {</div><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)"=
+>document</span>.<span style=3D"color:rgb(220,220,170)">getElementById</spa=
+n>(<span style=3D"color:rgb(206,145,120)">&#39;display&#39;</span>).<span s=
+tyle=3D"color:rgb(156,220,254)">value</span> <span style=3D"color:rgb(212,2=
+12,212)">=3D</span> <span style=3D"color:rgb(206,145,120)">&#39;&#39;</span=
+>;</div><div>}</div><br><div><span style=3D"color:rgb(86,156,214)">function=
+</span> <span style=3D"color:rgb(220,220,170)">calculate</span>() {</div><d=
+iv>=C2=A0 =C2=A0 <span style=3D"color:rgb(197,134,192)">try</span> {</div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(86,156,214)">const=
+</span> <span style=3D"color:rgb(79,193,255)">result</span> <span style=3D"=
+color:rgb(212,212,212)">=3D</span> <span style=3D"color:rgb(220,220,170)">e=
+val</span>(<span style=3D"color:rgb(156,220,254)">document</span>.<span sty=
+le=3D"color:rgb(220,220,170)">getElementById</span>(<span style=3D"color:rg=
+b(206,145,120)">&#39;display&#39;</span>).<span style=3D"color:rgb(156,220,=
+254)">value</span>);</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"c=
+olor:rgb(156,220,254)">document</span>.<span style=3D"color:rgb(220,220,170=
+)">getElementById</span>(<span style=3D"color:rgb(206,145,120)">&#39;displa=
+y&#39;</span>).<span style=3D"color:rgb(156,220,254)">value</span> <span st=
+yle=3D"color:rgb(212,212,212)">=3D</span> <span style=3D"color:rgb(79,193,2=
+55)">result</span>;</div><div>=C2=A0 =C2=A0 } <span style=3D"color:rgb(197,=
+134,192)">catch</span> (<span style=3D"color:rgb(156,220,254)">error</span>=
+) {</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,=
+254)">document</span>.<span style=3D"color:rgb(220,220,170)">getElementById=
+</span>(<span style=3D"color:rgb(206,145,120)">&#39;display&#39;</span>).<s=
+pan style=3D"color:rgb(156,220,254)">value</span> <span style=3D"color:rgb(=
+212,212,212)">=3D</span> <span style=3D"color:rgb(206,145,120)">&#39;Error&=
+#39;</span>;</div><div>=C2=A0 =C2=A0 }</div><div>}</div>
+<br></div></div>
+
+--0000000000003c435006225efb53--
+--0000000000003c435306225efb55
+Content-Type: text/html; charset="US-ASCII"; name="index.html"
+Content-Disposition: attachment; filename="index.html"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_m175rg9u0
+Content-ID: <f_m175rg9u0>
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBsYW5nPSJlbiI+DQo8aGVhZD4NCiAgICA8bWV0YSBjaGFy
+c2V0PSJVVEYtOCI+DQogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRl
+dmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPg0KICAgIDx0aXRsZT5DYWxjPC90aXRsZT4N
+CiAgICA8bGluayBocmVmPSJzdHlsZXMuY3NzIiByZWw9InN0eWxlc2hlZXQiPg0KPC9oZWFkPg0K
+PGJvZHk+DQogICAgPGgxIGNsYXNzPSJoZWFkaW5nIj5TaW1wbGUgY2FsY3VsYXRvcjwvaDE+DQog
+ICAgPGRpdiBjbGFzcz0iY2FsY3VsYXRvciI+DQogICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBp
+ZD0iZGlzcGxheSIgZGlzYWJsZWQ+DQogICAgICAgIDxkaXYgY2xhc3M9ImJ1dHRvbnMiPg0KICAg
+ICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJjbGVhckRpc3BsYXkoKSI+QzwvYnV0dG9uPg0KICAg
+ICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzEnKSI+MTwvYnV0dG9u
+Pg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzInKSI+Mjwv
+YnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzMn
+KSI+MzwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3Bs
+YXkoJysnKSI+KzwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRU
+b0Rpc3BsYXkoJzQnKSI+NDwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJh
+cHBlbmRUb0Rpc3BsYXkoJzUnKSI+NTwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNs
+aWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzYnKSI+NjwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRv
+biBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJy0nKSI+LTwvYnV0dG9uPg0KICAgICAgICAgICAg
+PGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzcnKSI+NzwvYnV0dG9uPg0KICAgICAg
+ICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzgnKSI+ODwvYnV0dG9uPg0K
+ICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJzknKSI+OTwvYnV0
+dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXkoJyonKSI+
+KjwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rpc3BsYXko
+JzAnKSI+MDwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJhcHBlbmRUb0Rp
+c3BsYXkoJy8nKSI+LzwvYnV0dG9uPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJjYWxj
+dWxhdGUoKSI+PTwvYnV0dG9uPg0KICAgICAgICAgPC9kaXY+DQogICAgPC9kaXY+DQogICAgPHNj
+cmlwdCBzcmM9InNjcmlwdC5qcyI+PC9zY3JpcHQ+DQo8L2JvZHk+DQo8L2h0bWw+
+--0000000000003c435306225efb55
+Content-Type: text/css; charset="US-ASCII"; name="styles.css"
+Content-Disposition: attachment; filename="styles.css"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_m175rga52
+Content-ID: <f_m175rga52>
+
+Ym9keSB7DQogICAgDQogICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7DQogICAgYWxpZ24taXRl
+bXM6IGNlbnRlcjsNCiAgICBoZWlnaHQ6IDEwMHZoOw0KICAgIGJhY2tncm91bmQtY29sb3I6ICNm
+NGY0ZjQ7DQogICAgbWFyZ2luOiAwOw0KICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJp
+ZjsNCn0NCg0KLmNhbGN1bGF0b3ItY29udGFpbmVyIHsNCiAgIA0KICAgIGFsaWduLWl0ZW1zOiBj
+ZW50ZXI7DQogICAgdGV4dC1hbGlnbjogY2VudGVyOw0KICAgIGJvcmRlcjogMTBweCA7DQogICAg
+Ym9yZGVyLWNvbG9yOiBibGFjazsgDQogICAgcGFkZGluZzogMjBweDsgICAgICAgICAgICAgIA0K
+ICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7ICAgICAgIA0KICAgIA0KfQ0KDQoNCi5oZWFkaW5nIHsN
+CiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgZm9udC1zaXplOiAycmVtOw0KICAgIGNvbG9y
+OiAjMDA0NGNjOw0KfQ0KDQouY2FsY3VsYXRvciB7DQogICAgDQogICAgcGFkZGluZzogMjBweDsN
+CiAgICBib3JkZXItcmFkaXVzOiA4MHB4Ow0KICAgIGJvcmRlci1jb2xvcjogYmxhY2s7DQogICAg
+Ym94LXNoYWRvdzogMHB4IDBweCAxMHB4IHJnYmEoMTkyLCA4MSwgODEsIDAuMSk7DQogICAgZGlz
+cGxheTogZmxleDsNCiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOw0KICAgIGFsaWduLWl0ZW1z
+OiBjZW50ZXI7DQp9DQoNCiNkaXNwbGF5IHsNCiAgICB3aWR0aDogMjAwcHg7DQogICAgaGVpZ2h0
+OiA0MHB4Ow0KICAgIGZvbnQtc2l6ZTogMjRweDsNCiAgICB0ZXh0LWFsaWduOiByaWdodDsNCiAg
+ICBtYXJnaW4tYm90dG9tOiAxMHB4Ow0KICAgIHBhZGRpbmc6IDVweDsNCiAgICBib3JkZXI6IDFw
+eCBzb2xpZCAjY2NjOw0KICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCn0NCg0KLmJ1dHRvbnMgew0K
+ICAgIGRpc3BsYXk6IGdyaWQ7DQogICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwg
+NTBweCk7DQogICAgZ2FwOiA3cHg7DQp9DQoNCmJ1dHRvbiB7DQogICAgd2lkdGg6IDUwcHg7DQog
+ICAgaGVpZ2h0OiA1MHB4Ow0KICAgIGZvbnQtc2l6ZTogMThweDsNCiAgICBib3JkZXI6IG5vbmU7
+DQogICAgYmFja2dyb3VuZC1jb2xvcjogIzAwNDRjYzsNCiAgICBjb2xvcjogd2hpdGU7DQogICAg
+Ym9yZGVyLXJhZGl1czogNXB4Ow0KICAgIGN1cnNvcjogcG9pbnRlcjsNCiAgICB0cmFuc2l0aW9u
+OiBiYWNrZ3JvdW5kLWNvbG9yIDAuM3M7DQp9DQoNCmJ1dHRvbjpob3ZlciB7DQogICAgYmFja2dy
+b3VuZC1jb2xvcjogIzAwMzM5OTsNCn0NCg==
+--0000000000003c435306225efb55--
